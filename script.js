@@ -79,7 +79,9 @@ function updateUI() {
     }
     priceOfTicket = getPriceOfSelectedMovie();
 
-    updateInfoAboutCountAndPrice(selectedSeats.length);
+    if (selectedSeats !== null) {
+        updateInfoAboutCountAndPrice(selectedSeats.length);
+    }
 };
 
 function sellSeats() {
