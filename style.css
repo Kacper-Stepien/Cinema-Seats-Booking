@@ -103,8 +103,8 @@ body {
 
 .seat {
     background-color: #abff4f;
-    border-radius: 12px 12px 0 0;
-    width: 1.8rem;
+    border-radius: 50% 50% 0 0;
+    width: 1.9rem;
     height: 2rem;
 }
 
@@ -153,4 +153,45 @@ body {
 .message span {
     font-weight: 600;
     color: #2ec4b6;
+}
+
+.buyBtn {
+    cursor: pointer;
+    font-size: 1.6rem;
+    background-color: #edf2f4;
+    border-radius: 8px;
+    border: none;
+    margin-top: 1rem;
+    outline: none;
+    padding: 1rem 5rem;
+    transition: all .25s ease;
+}
+
+.buyBtn:hover {
+    background-color: rgb(46, 196, 182);
+    color: #edf2f4;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 20px rgba(46, 196, 182, .2);
+}
+
+@media only screen and (max-width:550px) {
+    html {
+        font-size: 50%;
+    }
+
+    .choose-movie-container {
+        flex-direction: column;
+    }
+
+    .choose-movie-container h1 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    html {
+        font-size: 43%;
+    }
+
+
 }
